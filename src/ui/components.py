@@ -38,7 +38,7 @@ def render_header() -> None:
         '<div class="title-wrap">'
         '<div class="hero-eyebrow">🎉 Festa Junina Garatuja</div>'
         '<h1>Gincana Garatuja</h1>'
-        '<p>Placar acumulado das turmas em tempo real</p>'
+        '<p>Placar das turmas em tempo real</p>'
 
         '<div class="hero-tags">'
         '<span>🌽 Provas</span>'
@@ -73,7 +73,7 @@ def render_ranking_cards(ranking: list[dict]) -> None:
             '<div class="section-heading">'
             '<div class="section-kicker">Placar oficial</div>'
             '<div class="ranking-section-title">🏆 Classificação geral</div>'
-            '<p>O ranking é definido pelo total acumulado de provas + prendas.</p>'
+            '<p>O ranking é definido pelo total de provas e prendas.</p>'
             '</div>'
         ),
         unsafe_allow_html=True,
@@ -102,7 +102,7 @@ def render_ranking_cards(ranking: list[dict]) -> None:
             f'<div class="card-content">'
             f'<div class="medalha">{medalha}</div>'
             f'<div class="turma-nome">{nome}</div>'
-            f'<div class="turma-total-label">Total acumulado</div>'
+            f'<div class="turma-total-label">Total</div>'
             f'<div class="turma-pontos">{total_formatado}</div>'
             f'<div class="turma-pontos-label">pontos no ranking geral</div>'
             f'<div class="turma-breakdown">'
@@ -199,7 +199,7 @@ def render_footer() -> None:
         (
             '<footer class="footer-note">'
             '<span>🌽 Gincana Garatuja</span>'
-            '<strong>Atualize provas e prendas diariamente pelo Acesso Diretor.</strong>'
+            '<strong>Desenvolvido por Jean Carlos .</strong>'
             '</footer>'
         ),
         unsafe_allow_html=True,
